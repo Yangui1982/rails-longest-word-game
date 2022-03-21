@@ -1,0 +1,41 @@
+<h1>New Game</h1>
+<div class="container">
+  <div id="letter-selection">
+    <p><%=@letters[0]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[1]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[2]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[3]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[4]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[5]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[6]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[7]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[8]%></p>
+  </div>
+  <div id="letter-selection">
+    <p><%=@letters[9]%></p>
+  </div>
+</div>
+<h3>What is the longest word you can find?</h3>
+<div class="formulaire">
+  <form action="/score" method="get">
+    <input type="text" name="ask" class="input">
+    <input type="submit" value="Play" class="button">
+  </form>
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+</div>
